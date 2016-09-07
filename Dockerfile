@@ -7,7 +7,7 @@ RUN apt-get update && \
   apt-get install -y nodejs && \
   rm -rf /var/lib/apt/lists/* && \
   mkdir /work && \
-  wget https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_linux_amd64-1.9.40.zip -o /gae.zip && \
+  wget https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_linux_amd64-1.9.40.zip -O /gae.zip && \
   unzip /gae.zip && \
   rm -f /gae.zip
 
