@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER arran@consible.com
 
 RUN apt-get update && \
-  apt-get install -y build-essential vim wget htop automake aufs-tools curl git ssh wget unzip && \
+  apt-get install -y build-essential vim htop automake aufs-tools curl git ssh wget unzip && \
   curl -sL https://deb.nodesource.com/setup_5.x | bash -  && \
   apt-get install -y nodejs && \
   rm -rf /var/lib/apt/lists/* && \
