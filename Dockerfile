@@ -13,4 +13,5 @@ RUN apt-get update && \
 
 WORKDIR /work
 
-ENV PATH /go_appengine_sdk_linux_amd64-1.9.40/:$PATH
+ENV PATH /go_appengine/:$PATH
+ENV GOROOT /go_appengine/goroot/
