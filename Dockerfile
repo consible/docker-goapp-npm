@@ -12,3 +12,5 @@ RUN apt-get update && \
   rm -f /gae.zip
 
 WORKDIR /work
+
+ENV PATH /go_appengine_sdk_linux_amd64-1.9.40/:$PATH
